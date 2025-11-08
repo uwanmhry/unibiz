@@ -3,9 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PT Unibiz Kreasindo Utama | Kontraktor Profesional Depok</title>
+    <title>PT Unibiz Kreasindo Utama - Kontraktor Profesional Berpengalaman</title>
+    <meta name="description" content="PT Unibiz Kreasindo Utama adalah kontraktor profesional anggota GAPENSI dengan pengalaman lebih dari 15 tahun dalam konstruksi gedung, instalasi listrik, dan mekanikal.">
+    <meta name="keywords" content="kontraktor, konstruksi, gedung, instalasi listrik, mekanikal, plumbing, GAPENSI, Depok, jasa konstruksi">
+    <meta name="author" content="PT Unibiz Kreasindo Utama">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PT Unibiz Kreasindo Utama - Kontraktor Profesional Berpengalaman">
+    <meta property="og:description" content="Kontraktor profesional anggota GAPENSI dengan pengalaman lebih dari 15 tahun dalam konstruksi gedung, instalasi listrik, dan mekanikal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unibizkontraktor.com">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://unibizkontraktor.com">
 
-    <link rel="shortcut icon" href="img/logo-unibiz.jpg" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo_unibiz_2.png" type="image/x-icon">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,6 +37,36 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "PT Unibiz Kreasindo Utama",
+      "url": "https://unibizkontraktor.com",
+      "logo": "https://unibizkontraktor.com/img/logo_unibiz_2.png",
+      "description": "Kontraktor profesional anggota GAPENSI dengan pengalaman lebih dari 15 tahun dalam konstruksi gedung, instalasi listrik, dan mekanikal.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Raya Bogor Km. 34, No. 45",
+        "addressLocality": "Kukusan, Beji",
+        "addressRegion": "Depok",
+        "postalCode": "16425",
+        "addressCountry": "ID"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62-812-9898-2345",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/unibizkontraktor",
+        "https://www.instagram.com/unibizkontraktor",
+        "https://www.linkedin.com/company/unibizkontraktor"
+      ]
+    }
+    </script>
+
     <script>
       // Konfigurasi Tailwind untuk font kustom dan glassmorphism
       tailwind.config = {
@@ -38,8 +81,9 @@
             colors: {
               glass: "rgba(255, 255, 255, 0.1)",
               "glass-dark": "rgba(0, 0, 0, 0.1)",
-              primary: "#16a34a", // Changed to green
-              "primary-dark": "#15803d", // Changed to darker green
+              primary: "#0d8a3f", // Warna hijau yang lebih gelap
+              "primary-dark": "#0a6b32", // Warna hijau yang lebih gelap
+              "primary-light": "#16a34a" // Warna hijau yang sedikit lebih terang untuk aksen
             },
           },
         },
@@ -79,11 +123,11 @@
 
       /* Gradient backgrounds */
       .gradient-bg {
-        background: linear-gradient(135deg, #15803d 0%, #16a34a 100%); /* Changed to green */
+        background: linear-gradient(135deg, #0a6b32 0%, #0d8a3f 100%); /* Warna hijau yang lebih gelap */
       }
 
       .gradient-bg-light {
-        background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); /* Changed to green */
+        background: linear-gradient(135deg, #0d8a3f 0%, #16a34a 100%); /* Warna hijau yang lebih gelap dengan aksen terang */
       }
 
       /* Custom scrollbar */
@@ -96,12 +140,12 @@
       }
 
       ::-webkit-scrollbar-thumb {
-        background: #16a34a; /* Changed to green */
+        background: #0d8a3f; /* Warna hijau yang lebih gelap */
         border-radius: 4px;
       }
 
       ::-webkit-scrollbar-thumb:hover {
-        background: #15803d; /* Changed to darker green */
+        background: #0a6b32; /* Warna hijau yang lebih gelap */
       }
 
       /* Floating animation */
@@ -151,270 +195,7 @@
           left: 100%;
         }
       }
-    </style>
-  </head>
-  <body class="bg-gray-50">
-<!-- Header & Navigasi -->
-<header
-  class="bg-white/95 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300"
->
-  <nav class="container mx-auto px-6 py-3">
-    <div class="flex justify-between items-center">
-      <!-- Logo -->
-      <a
-        href="#home"
-        class="text-xl font-bold text-gray-800 flex items-center"
-      >
-        <img
-          src="img/logo-unibiz.jpg"
-          alt="Logo Unibiz"
-          class="h-14 w-auto rounded-lg shadow-md mr-3"
-        />
-        <!-- <span>Unibiz Kontraktor</span> -->
-      </a>
 
-      <!-- Menu Desktop -->
-      <div class="hidden md:flex space-x-8">
-        <a
-          href="#home"
-          class="nav-link text-gray-600 hover:text-green-600 transition duration-300 font-medium py-2"
-          data-section="home"
-          >Beranda</a
-        >
-        <a
-          href="#about"
-          class="nav-link text-gray-600 hover:text-green-600 transition duration-300 font-medium py-2"
-          data-section="about"
-          >Tentang</a
-        >
-        <a
-          href="#seputar-pt"
-          class="nav-link text-gray-600 hover:text-green-600 transition duration-300 font-medium py-2"
-          data-section="seputar-pt"
-          >Seputar</a
-        >
-        <a
-          href="#services"
-          class="nav-link text-gray-600 hover:text-green-600 transition duration-300 font-medium py-2"
-          data-section="services"
-          >Layanan</a
-        >
-        <a
-          href="#keunggulan"
-          class="nav-link text-gray-600 hover:text-green-600 transition duration-300 font-medium py-2"
-          data-section="keunggulan"
-          >Keunggulan</a
-        >
-        <a
-          href="#gallery"
-          class="nav-link text-gray-600 hover:text-green-600 transition duration-300 font-medium py-2"
-          data-section="gallery"
-          >Galeri</a
-        >
-        <a
-          href="#faq"
-          class="nav-link text-gray-600 hover:text-green-600 transition duration-300 font-medium py-2"
-          data-section="faq"
-          >FAQ</a
-        >
-        <a
-          href="#contact"
-          class="nav-link text-gray-600 hover:text-green-600 transition duration-300 font-medium py-2"
-          data-section="contact"
-          >Kontak</a
-        >
-      </div>
-
-      <!-- Tombol Menu Mobile -->
-      <button
-        id="mobile-menu-button"
-        class="md:hidden focus:outline-none text-gray-600"
-      >
-        <svg
-          class="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Menu Mobile -->
-    <div
-      id="mobile-menu"
-      class="hidden md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg border"
-    >
-      <a
-        href="#home"
-        class="nav-link block py-3 px-4 text-gray-600 hover:text-green-600 hover:bg-green-50 transition duration-300 border-b"
-        data-section="home"
-        >Beranda</a
-      >
-      <a
-        href="#about"
-        class="nav-link block py-3 px-4 text-gray-600 hover:text-green-600 hover:bg-green-50 transition duration-300 border-b"
-        data-section="about"
-        >Tentang</a
-      >
-      <a
-        href="#seputar-pt"
-        class="nav-link block py-3 px-4 text-gray-600 hover:text-green-600 hover:bg-green-50 transition duration-300 border-b"
-        data-section="seputar-pt"
-        >Seputar</a
-      >
-      <a
-        href="#services"
-        class="nav-link block py-3 px-4 text-gray-600 hover:text-green-600 hover:bg-green-50 transition duration-300 border-b"
-        data-section="services"
-        >Layanan</a
-      >
-      <a
-        href="#keunggulan"
-        class="nav-link block py-3 px-4 text-gray-600 hover:text-green-600 hover:bg-green-50 transition duration-300 border-b"
-        data-section="keunggulan"
-        >Keunggulan</a
-      >
-      <a
-        href="#gallery"
-        class="nav-link block py-3 px-4 text-gray-600 hover:text-green-600 hover:bg-green-50 transition duration-300 border-b"
-        data-section="gallery"
-        >Galeri</a
-      >
-      <a
-        href="#faq"
-        class="nav-link block py-3 px-4 text-gray-600 hover:text-green-600 hover:bg-green-50 transition duration-300 border-b"
-        data-section="faq"
-        >FAQ</a
-      >
-      <a
-        href="#contact"
-        class="nav-link block py-3 px-4 text-gray-600 hover:text-green-600 hover:bg-green-50 transition duration-300"
-        data-section="contact"
-        >Kontak</a
-      >
-    </div>
-  </nav>
-</header>
-
-<script>
-  // Mobile menu functionality
-  document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    if (mobileMenuButton && mobileMenu) {
-      mobileMenuButton.addEventListener('click', function() {
-        mobileMenu.classList.toggle('hidden');
-        
-        // Ubah ikon menu ketika dibuka/ditutup
-        const icon = mobileMenuButton.querySelector('svg');
-        if (mobileMenu.classList.contains('hidden')) {
-          icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
-        } else {
-          icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
-        }
-      });
-
-      // Tutup menu mobile ketika link diklik
-      const mobileLinks = mobileMenu.querySelectorAll('a');
-      mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-          // Kembalikan ikon ke keadaan semula
-          const icon = mobileMenuButton.querySelector('svg');
-          icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
-        });
-      });
-    }
-  });
-</script>
-
-    <script>
-      // Function untuk update active nav link
-      function updateActiveNavLink() {
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll(".nav-link");
-
-        let currentSection = "";
-
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          const scrollPosition = window.scrollY + 100; // Offset untuk trigger lebih awal
-
-          if (
-            scrollPosition >= sectionTop &&
-            scrollPosition < sectionTop + sectionHeight
-          ) {
-            currentSection = section.getAttribute("id");
-          }
-        });
-
-        // Remove active class dari semua links
-        navLinks.forEach((link) => {
-          link.classList.remove("text-green-600", "font-semibold");
-          link.classList.add("text-gray-600");
-        });
-
-        // Add active class ke current section link
-        if (currentSection) {
-          const activeLink = document.querySelector(
-            `.nav-link[data-section="${currentSection}"]`
-          );
-          if (activeLink) {
-            activeLink.classList.remove("text-gray-600");
-            activeLink.classList.add("text-green-600", "font-semibold");
-          }
-        }
-      }
-
-      // Event listener untuk scroll
-      window.addEventListener("scroll", updateActiveNavLink);
-
-      // Event listener untuk page load
-      document.addEventListener("DOMContentLoaded", function () {
-        updateActiveNavLink();
-
-        // Smooth scroll untuk nav links
-        document.querySelectorAll(".nav-link").forEach((link) => {
-          link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("href");
-            const targetSection = document.querySelector(targetId);
-
-            if (targetSection) {
-              // Close mobile menu jika terbuka
-              const mobileMenu = document.getElementById("mobile-menu");
-              mobileMenu.classList.add("hidden");
-
-              // Smooth scroll ke section
-              window.scrollTo({
-                top: targetSection.offsetTop - 80, // Offset untuk navbar fixed
-                behavior: "smooth",
-              });
-            }
-          });
-        });
-
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById("mobile-menu-button");
-        const mobileMenu = document.getElementById("mobile-menu");
-
-        mobileMenuButton.addEventListener("click", () => {
-          mobileMenu.classList.toggle("hidden");
-        });
-      });
-    </script>
-
-    <style>
       /* Smooth scroll behavior */
       html {
         scroll-behavior: smooth;
@@ -422,29 +203,29 @@
 
       /* Active link styles */
       .nav-link.active {
-        color: #16a34a; /* Changed to green */
+        color: #0d8a3f; /* Warna hijau yang lebih gelap */
         font-weight: 600;
       }
 
       /* Optional: Add a subtle underline for active link */
-      .nav-link.text-green-600 {
+      .nav-link.text-primary {
         position: relative;
       }
 
-      .nav-link.text-green-600::after {
+      .nav-link.text-primary::after {
         content: "";
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: #16a34a; /* Changed to green */
+        background-color: #0d8a3f; /* Warna hijau yang lebih gelap */
         transform: scaleX(1);
         transition: transform 0.3s ease;
       }
 
       /* For mobile menu active links */
-      #mobile-menu .nav-link.text-green-600::after {
+      #mobile-menu .nav-link.text-primary::after {
         bottom: 12px;
         width: 4px;
         height: 20px;
@@ -452,6 +233,158 @@
         border-radius: 0 2px 2px 0;
       }
     </style>
+  </head>
+  
+  <body class="bg-gray-50">
+    <!-- Header & Navigasi -->
+    <header
+      class="bg-white/95 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300"
+    >
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <a
+            href="#home"
+            class="text-xl font-bold text-gray-800 flex items-center"
+          >
+            <img
+              src="img/logo_unibiz.png"
+              alt="Logo Unibiz - Kontraktor Profesional"
+              class="h-14 w-auto rounded-lg"
+            />
+          </a>
+
+          <!-- Menu Desktop -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="nav-link text-gray-600 hover:text-primary transition duration-300 font-medium py-2"
+              data-section="home"
+              >Beranda</a
+            >
+            <a
+              href="#about"
+              class="nav-link text-gray-600 hover:text-primary transition duration-300 font-medium py-2"
+              data-section="about"
+              >Tentang</a
+            >
+            <a
+              href="#seputar-pt"
+              class="nav-link text-gray-600 hover:text-primary transition duration-300 font-medium py-2"
+              data-section="seputar-pt"
+              >Seputar</a
+            >
+            <a
+              href="#services"
+              class="nav-link text-gray-600 hover:text-primary transition duration-300 font-medium py-2"
+              data-section="services"
+              >Layanan</a
+            >
+            <a
+              href="#keunggulan"
+              class="nav-link text-gray-600 hover:text-primary transition duration-300 font-medium py-2"
+              data-section="keunggulan"
+              >Keunggulan</a
+            >
+            <a
+              href="#gallery"
+              class="nav-link text-gray-600 hover:text-primary transition duration-300 font-medium py-2"
+              data-section="gallery"
+              >Galeri</a
+            >
+            <a
+              href="#faq"
+              class="nav-link text-gray-600 hover:text-primary transition duration-300 font-medium py-2"
+              data-section="faq"
+              >FAQ</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-gray-600 hover:text-primary transition duration-300 font-medium py-2"
+              data-section="contact"
+              >Kontak</a
+            >
+          </div>
+
+          <!-- Tombol Menu Mobile -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden focus:outline-none text-gray-600"
+            aria-label="Toggle mobile menu"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg border"
+        >
+          <a
+            href="#home"
+            class="nav-link block py-3 px-4 text-gray-600 hover:text-primary hover:bg-green-50 transition duration-300 border-b"
+            data-section="home"
+            >Beranda</a
+          >
+          <a
+            href="#about"
+            class="nav-link block py-3 px-4 text-gray-600 hover:text-primary hover:bg-green-50 transition duration-300 border-b"
+            data-section="about"
+            >Tentang</a
+          >
+          <a
+            href="#seputar-pt"
+            class="nav-link block py-3 px-4 text-gray-600 hover:text-primary hover:bg-green-50 transition duration-300 border-b"
+            data-section="seputar-pt"
+            >Seputar</a
+          >
+          <a
+            href="#services"
+            class="nav-link block py-3 px-4 text-gray-600 hover:text-primary hover:bg-green-50 transition duration-300 border-b"
+            data-section="services"
+            >Layanan</a
+          >
+          <a
+            href="#keunggulan"
+            class="nav-link block py-3 px-4 text-gray-600 hover:text-primary hover:bg-green-50 transition duration-300 border-b"
+            data-section="keunggulan"
+            >Keunggulan</a
+          >
+          <a
+            href="#gallery"
+            class="nav-link block py-3 px-4 text-gray-600 hover:text-primary hover:bg-green-50 transition duration-300 border-b"
+            data-section="gallery"
+            >Galeri</a
+          >
+          <a
+            href="#faq"
+            class="nav-link block py-3 px-4 text-gray-600 hover:text-primary hover:bg-green-50 transition duration-300 border-b"
+            data-section="faq"
+            >FAQ</a
+          >
+          <a
+            href="#contact"
+            class="nav-link block py-3 px-4 text-gray-600 hover:text-primary hover:bg-green-50 transition duration-300"
+            data-section="contact"
+            >Kontak</a
+          >
+        </div>
+      </nav>
+    </header>
 
     <main class="pt-16">
       <!-- Hero Section -->
@@ -466,39 +399,32 @@
       >
         <!-- Overlay gradasi hijau -->
         <div
-          class="absolute inset-0 bg-gradient-to-r from-green-900/70 to-green-600/50"
+          class="absolute inset-0 bg-gradient-to-r from-primary-dark/70 to-primary/50"
         ></div>
 
         <div class="relative z-10 text-center px-6 max-w-3xl mx-auto">
-          <!-- Logo di Hero -->
-          <!-- <div class="flex justify-center mb-6">
-            <div class="bg-white p-4 rounded-2xl shadow-lg">
-              <img src="img/logo-unibiz.jpg" alt="Logo Unibiz" class="h-24 w-auto" />
-            </div>
-          </div> -->
-          
           <!-- Main Heading -->
           <h1 class="text-5xl md:text-6xl font-bold mb-6">
-            Kontraktor Profesional
+            UNIBIZ
           </h1>
 
           <!-- Subtitle -->
           <p class="text-xl md:text-2xl mb-10 text-green-100">
-            Wujudkan rumah impian Anda dengan kualitas terbaik
+            Kontraktor profesional anggota Asosiasi GAPENSI yang memiliki track record yang solid !
           </p>
 
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
-              class="bg-white text-green-900 px-8 py-4 rounded-lg hover:bg-green-50 transition duration-300 font-semibold"
+              class="bg-white text-primary-dark px-8 py-4 rounded-lg hover:bg-green-50 transition duration-300 font-semibold"
             >
               Konsultasi Gratis
             </a>
 
             <a
               href="#gallery"
-              class="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-green-900 transition duration-300 font-semibold"
+              class="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-primary-dark transition duration-300 font-semibold"
             >
               Lihat Proyek
             </a>
@@ -507,7 +433,7 @@
 
         <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <a href="#about" class="text-white animate-bounce">
+          <a href="#about" class="text-white animate-bounce" aria-label="Scroll ke bagian tentang kami">
             <i class="fas fa-chevron-down text-xl"></i>
           </a>
         </div>
@@ -522,7 +448,7 @@
               <div class="relative">
                 <img
                   src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop"
-                  alt="Proyek Konstruksi"
+                  alt="Proyek Konstruksi PT Unibiz Kreasindo Utama"
                   class="rounded-2xl shadow-2xl w-full"
                 />
                 <div
@@ -537,10 +463,10 @@
             <!-- Konten -->
             <div class="lg:w-1/2 fade-in-up">
               <div class="glass rounded-2xl p-8 shadow-xl">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                   Tentang
                   <span class="text-primary">PT. Unibiz Kreasindo Utama</span>
-                </h2>
+                </h1>
 
                 <p class="text-gray-600 mb-6">
                   PT. Unibiz Kreasindo Utama adalah perusahaan kontraktor yang
@@ -552,15 +478,15 @@
                 </p>
 
                 <!-- Legalitas & Sertifikasi -->
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">
                   Legalitas & Standar Kualitas
-                </h3>
+                </h2>
                 <div class="grid grid-cols-2 gap-4 mb-6">
                   <div
                     class="flex items-center p-3 bg-white rounded-xl shadow-md"
                   >
                     <div class="bg-green-100 p-3 rounded-lg mr-4">
-                      <i class="fas fa-file-alt text-green-600 text-xl"></i>
+                      <i class="fas fa-file-alt text-primary text-xl"></i>
                     </div>
                     <div>
                       <p class="text-xs text-gray-500">NIB</p>
@@ -571,7 +497,7 @@
                     class="flex items-center p-3 bg-white rounded-xl shadow-md"
                   >
                     <div class="bg-green-100 p-3 rounded-lg mr-4">
-                      <i class="fas fa-award text-green-600 text-xl"></i>
+                      <i class="fas fa-award text-primary text-xl"></i>
                     </div>
                     <div>
                       <p class="text-xs text-gray-500">Asosiasi</p>
@@ -581,7 +507,7 @@
                 </div>
 
                 <div
-                  class="bg-green-50 border-l-4 border-green-600 p-4 rounded-xl mb-6"
+                  class="bg-green-50 border-l-4 border-primary p-4 rounded-xl mb-6"
                 >
                   <p class="text-sm text-gray-700">
                     Kami menerapkan standar mutu dan keamanan yang mengacu pada
@@ -594,13 +520,13 @@
                 </div>
 
                 <!-- Klasifikasi Layanan -->
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">
                   Klasifikasi Layanan Utama
-                </h3>
+                </h2>
                 <ul class="space-y-2 text-gray-600 mb-6">
                   <li class="flex items-start">
                     <div class="bg-green-100 p-1 rounded-full mr-3 mt-1">
-                      <i class="fas fa-check text-green-600 text-xs"></i>
+                      <i class="fas fa-check text-primary text-xs"></i>
                     </div>
                     <span
                       ><strong>BG002:</strong> Konstruksi Gedung
@@ -609,7 +535,7 @@
                   </li>
                   <li class="flex items-start">
                     <div class="bg-green-100 p-1 rounded-full mr-3 mt-1">
-                      <i class="fas fa-check text-green-600 text-xs"></i>
+                      <i class="fas fa-check text-primary text-xs"></i>
                     </div>
                     <span
                       ><strong>BG003:</strong> Konstruksi Gedung Industri</span
@@ -617,7 +543,7 @@
                   </li>
                   <li class="flex items-start">
                     <div class="bg-green-100 p-1 rounded-full mr-3 mt-1">
-                      <i class="fas fa-check text-green-600 text-xs"></i>
+                      <i class="fas fa-check text-primary text-xs"></i>
                     </div>
                     <span
                       ><strong>BG005:</strong> Konstruksi Gedung Kesehatan</span
@@ -625,7 +551,7 @@
                   </li>
                   <li class="flex items-start">
                     <div class="bg-green-100 p-1 rounded-full mr-3 mt-1">
-                      <i class="fas fa-check text-green-600 text-xs"></i>
+                      <i class="fas fa-check text-primary text-xs"></i>
                     </div>
                     <span
                       ><strong>EL007:</strong> Instalasi Jaringan Listrik
@@ -633,10 +559,10 @@
                     >
                   </li>
                   <li
-                    class="flex items-start text-sm font-semibold text-green-600"
+                    class="flex items-start text-sm font-semibold text-primary"
                   >
                     <div class="bg-green-100 p-1 rounded-full mr-3 mt-1">
-                      <i class="fas fa-ellipsis-h text-green-600 text-xs"></i>
+                      <i class="fas fa-ellipsis-h text-primary text-xs"></i>
                     </div>
                     <span>Dan 6 layanan terkait lainnya.</span>
                   </li>
@@ -767,7 +693,9 @@
             <div class="mb-4">
               <button
                 onclick="toggleAccordion('bangunan')"
-                class="accordion-button w-full glass text-left p-5 rounded-2xl shadow-lg flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                class="accordion-button w-full glass text-left p-5 rounded-2xl shadow-lg flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
+                aria-expanded="false"
+                aria-controls="bangunan"
               >
                 <span
                   class="text-lg font-semibold text-gray-800 flex items-center"
@@ -792,14 +720,15 @@
               <div
                 id="bangunan"
                 class="accordion-content hidden mt-4 space-y-4"
+                aria-labelledby="bangunan-accordion"
               >
                 <!-- Service Card 1 -->
                 <div
-                  class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-green-600 hover:shadow-xl transition-all duration-300"
+                  class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300"
                 >
                   <div class="flex items-start">
                     <span
-                      class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
+                      class="bg-green-100 text-primary-dark text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
                       >BG002</span
                     >
                     <div>
@@ -816,11 +745,11 @@
                 </div>
                 <!-- Service Card 2 -->
                 <div
-                  class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-green-600 hover:shadow-xl transition-all duration-300"
+                  class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300"
                 >
                   <div class="flex items-start">
                     <span
-                      class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
+                      class="bg-green-100 text-primary-dark text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
                       >BG003</span
                     >
                     <div>
@@ -837,11 +766,11 @@
                 </div>
                 <!-- Service Card 3 -->
                 <div
-                  class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-green-600 hover:shadow-xl transition-all duration-300"
+                  class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-primary hover:shadow-xl transition-all duration-300"
                 >
                   <div class="flex items-start">
                     <span
-                      class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
+                      class="bg-green-100 text-primary-dark text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
                       >BG005</span
                     >
                     <div>
@@ -863,7 +792,9 @@
             <div class="mb-4">
               <button
                 onclick="toggleAccordion('listrik')"
-                class="accordion-button w-full glass text-left p-5 rounded-2xl shadow-lg flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                class="accordion-button w-full glass text-left p-5 rounded-2xl shadow-lg flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
+                aria-expanded="false"
+                aria-controls="listrik"
               >
                 <span
                   class="text-lg font-semibold text-gray-800 flex items-center"
@@ -885,7 +816,7 @@
                   ></path>
                 </svg>
               </button>
-              <div id="listrik" class="accordion-content hidden mt-4 space-y-4">
+              <div id="listrik" class="accordion-content hidden mt-4 space-y-4" aria-labelledby="listrik-accordion">
                 <!-- Service Card 1 -->
                 <div
                   class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-yellow-500 hover:shadow-xl transition-all duration-300"
@@ -958,7 +889,9 @@
             <div class="mb-4">
               <button
                 onclick="toggleAccordion('mekanikal')"
-                class="accordion-button w-full glass text-left p-5 rounded-2xl shadow-lg flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                class="accordion-button w-full glass text-left p-5 rounded-2xl shadow-lg flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
+                aria-expanded="false"
+                aria-controls="mekanikal"
               >
                 <span
                   class="text-lg font-semibold text-gray-800 flex items-center"
@@ -983,6 +916,7 @@
               <div
                 id="mekanikal"
                 class="accordion-content hidden mt-4 space-y-4"
+                aria-labelledby="mekanikal-accordion"
               >
                 <!-- Service Card 1 -->
                 <div
@@ -990,7 +924,7 @@
                 >
                   <div class="flex items-start">
                     <span
-                      class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
+                      class="bg-green-100 text-primary-dark text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
                       >MK001</span
                     >
                     <div>
@@ -1012,7 +946,7 @@
                 >
                   <div class="flex items-start">
                     <span
-                      class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
+                      class="bg-green-100 text-primary-dark text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
                       >MK002</span
                     >
                     <div>
@@ -1034,7 +968,7 @@
                 >
                   <div class="flex items-start">
                     <span
-                      class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
+                      class="bg-green-100 text-primary-dark text-xs font-semibold px-2.5 py-0.5 rounded mr-4"
                       >MK005</span
                     >
                     <div>
@@ -1096,7 +1030,7 @@
               <div
                 class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="fas fa-users text-green-600 text-2xl"></i>
+                <i class="fas fa-users text-primary text-2xl"></i>
               </div>
               <h3 class="text-xl font-semibold text-gray-800 mb-2">
                 Tim Profesional
@@ -1114,7 +1048,7 @@
               <div
                 class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="fas fa-microchip text-green-600 text-2xl"></i>
+                <i class="fas fa-microchip text-primary text-2xl"></i>
               </div>
               <h3 class="text-xl font-semibold text-gray-800 mb-2">
                 Teknologi Advanced
@@ -1132,7 +1066,7 @@
               <div
                 class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
+                <i class="fas fa-shield-alt text-primary text-2xl"></i>
               </div>
               <h3 class="text-xl font-semibold text-gray-800 mb-2">
                 Kejujuran & Security
@@ -1150,7 +1084,7 @@
               <div
                 class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4"
               >
-                <i class="fas fa-handshake text-green-600 text-2xl"></i>
+                <i class="fas fa-handshake text-primary text-2xl"></i>
               </div>
               <h3 class="text-xl font-semibold text-gray-800 mb-2">
                 Budaya Kerja
@@ -1192,7 +1126,7 @@
               <div class="relative overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src="https://picsum.photos/seed/unibiz-project-1/600/400.jpg"
-                  alt="Dokumentasi Proyek 1"
+                  alt="Dokumentasi Proyek 1 PT Unibiz Kreasindo Utama"
                   class="gallery-item w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div
@@ -1212,7 +1146,7 @@
               <div class="relative overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src="https://picsum.photos/seed/unibiz-project-2/600/400.jpg"
-                  alt="Dokumentasi Proyek 2"
+                  alt="Dokumentasi Proyek 2 PT Unibiz Kreasindo Utama"
                   class="gallery-item w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div
@@ -1232,7 +1166,7 @@
               <div class="relative overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src="https://picsum.photos/seed/unibiz-project-3/600/400.jpg"
-                  alt="Dokumentasi Proyek 3"
+                  alt="Dokumentasi Proyek 3 PT Unibiz Kreasindo Utama"
                   class="gallery-item w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div
@@ -1252,7 +1186,7 @@
               <div class="relative overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src="https://picsum.photos/seed/unibiz-project-4/600/400.jpg"
-                  alt="Dokumentasi Proyek 4"
+                  alt="Dokumentasi Proyek 4 PT Unibiz Kreasindo Utama"
                   class="gallery-item w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div
@@ -1272,7 +1206,7 @@
               <div class="relative overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src="https://picsum.photos/seed/unibiz-project-5/600/400.jpg"
-                  alt="Dokumentasi Proyek 5"
+                  alt="Dokumentasi Proyek 5 PT Unibiz Kreasindo Utama"
                   class="gallery-item w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div
@@ -1292,7 +1226,7 @@
               <div class="relative overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src="https://picsum.photos/seed/unibiz-project-6/600/400.jpg"
-                  alt="Dokumentasi Proyek 6"
+                  alt="Dokumentasi Proyek 6 PT Unibiz Kreasindo Utama"
                   class="gallery-item w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div
@@ -1312,7 +1246,7 @@
               <div class="relative overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src="https://picsum.photos/seed/unibiz-project-7/600/400.jpg"
-                  alt="Dokumentasi Proyek 7"
+                  alt="Dokumentasi Proyek 7 PT Unibiz Kreasindo Utama"
                   class="gallery-item w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div
@@ -1332,7 +1266,7 @@
               <div class="relative overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src="https://picsum.photos/seed/unibiz-project-8/600/400.jpg"
-                  alt="Dokumentasi Proyek 8"
+                  alt="Dokumentasi Proyek 8 PT Unibiz Kreasindo Utama"
                   class="gallery-item w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div
@@ -1359,13 +1293,14 @@
         <button
           id="lightbox-close"
           class="absolute top-4 right-4 text-white text-4xl font-bold hover:text-gray-300 z-10"
+          aria-label="Tutup lightbox"
         >
           &times;
         </button>
         <img
           id="lightbox-img"
           src=""
-          alt="Gambar Proyek"
+          alt="Gambar Proyek PT Unibiz Kreasindo Utama"
           class="max-w-full max-h-full rounded-lg"
         />
       </div>
@@ -1391,7 +1326,9 @@
             <div class="glass rounded-2xl shadow-lg overflow-hidden">
               <button
                 onclick="toggleAccordion('faq-0')"
-                class="accordion-button w-full text-left p-5 rounded-2xl flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                class="accordion-button w-full text-left p-5 rounded-2xl flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
+                aria-expanded="false"
+                aria-controls="faq-0"
               >
                 <span class="font-semibold text-gray-800"
                   >Bagaimana proses kerja sama dengan perusahaan konstruksi
@@ -1425,7 +1362,9 @@
             <div class="glass rounded-2xl shadow-lg overflow-hidden">
               <button
                 onclick="toggleAccordion('faq-1')"
-                class="accordion-button w-full text-left p-5 rounded-2xl flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                class="accordion-button w-full text-left p-5 rounded-2xl flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
+                aria-expanded="false"
+                aria-controls="faq-1"
               >
                 <span class="font-semibold text-gray-800"
                   >Apakah perusahaan Anda menerima subkontrak atau proyek
@@ -1457,7 +1396,9 @@
             <div class="glass rounded-2xl shadow-lg overflow-hidden">
               <button
                 onclick="toggleAccordion('faq-2')"
-                class="accordion-button w-full text-left p-5 rounded-2xl flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                class="accordion-button w-full text-left p-5 rounded-2xl flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
+                aria-expanded="false"
+                aria-controls="faq-2"
               >
                 <span class="font-semibold text-gray-800"
                   >Bagaimana perusahaan Anda memastikan kepatuhan terhadap
@@ -1490,7 +1431,9 @@
             <div class="glass rounded-2xl shadow-lg overflow-hidden">
               <button
                 onclick="toggleAccordion('faq-3')"
-                class="accordion-button w-full text-left p-5 rounded-2xl flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                class="accordion-button w-full text-left p-5 rounded-2xl flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
+                aria-expanded="false"
+                aria-controls="faq-3"
               >
                 <span class="font-semibold text-gray-800"
                   >Apakah perusahaan Anda memiliki program keberlanjutan atau
@@ -1523,7 +1466,9 @@
             <div class="glass rounded-2xl shadow-lg overflow-hidden">
               <button
                 onclick="toggleAccordion('faq-4')"
-                class="accordion-button w-full text-left p-5 rounded-2xl flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                class="accordion-button w-full text-left p-5 rounded-2xl flex justify-between items-center hover:bg-white hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
+                aria-expanded="false"
+                aria-controls="faq-4"
               >
                 <span class="font-semibold text-gray-800"
                   >Bagaimana cara mengajukan penawaran kerjasama dengan
@@ -1672,6 +1617,7 @@
                   style="border: 0"
                   allowfullscreen=""
                   loading="lazy"
+                  title="Lokasi PT Unibiz Kreasindo Utama"
                 ></iframe>
               </div>
             </div>
@@ -1686,7 +1632,7 @@
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="mb-4 md:mb-0">
             <div class="flex items-center">
-              <img src="img/logo-unibiz.jpg" alt="Logo Unibiz" class="h-8 w-auto mr-3" />
+              <img src="img/logo-unibiz.jpg" alt="Logo Unibiz - Kontraktor Profesional" class="h-8 w-auto mr-3" />
               <p>&copy; 2024 PT Unibiz Kreasindo Utama. All Rights Reserved.</p>
             </div>
             <p class="mt-2 text-sm opacity-80">
@@ -1697,24 +1643,28 @@
             <a
               href="#"
               class="text-white hover:text-green-300 transition duration-300"
+              aria-label="Facebook PT Unibiz Kreasindo Utama"
             >
               <i class="fab fa-facebook-f text-xl"></i>
             </a>
             <a
               href="#"
               class="text-white hover:text-green-300 transition duration-300"
+              aria-label="Instagram PT Unibiz Kreasindo Utama"
             >
               <i class="fab fa-instagram text-xl"></i>
             </a>
             <a
               href="#"
               class="text-white hover:text-green-300 transition duration-300"
+              aria-label="LinkedIn PT Unibiz Kreasindo Utama"
             >
               <i class="fab fa-linkedin-in text-xl"></i>
             </a>
             <a
               href="#"
               class="text-white hover:text-green-300 transition duration-300"
+              aria-label="YouTube PT Unibiz Kreasindo Utama"
             >
               <i class="fab fa-youtube text-xl"></i>
             </a>
@@ -1725,31 +1675,111 @@
 
     <!-- Script JS -->
     <script>
-      // Toggle Mobile Menu
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
+      // Mobile Menu Functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+          mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            
+            // Ubah ikon menu ketika dibuka/ditutup
+            const icon = mobileMenuButton.querySelector('svg');
+            if (mobileMenu.classList.contains('hidden')) {
+              icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+            } else {
+              icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+            }
+          });
 
-      mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
+          // Tutup menu mobile ketika link diklik
+          const mobileLinks = mobileMenu.querySelectorAll('a');
+          mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+              mobileMenu.classList.add('hidden');
+              // Kembalikan ikon ke keadaan semula
+              const icon = mobileMenuButton.querySelector('svg');
+              icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+            });
+          });
+        }
       });
 
-      // Close mobile menu when a link is clicked
-      const mobileLinks = mobileMenu.querySelectorAll("a");
-      mobileLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
+      // Function untuk update active nav link
+      function updateActiveNavLink() {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        let currentSection = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          const scrollPosition = window.scrollY + 100; // Offset untuk trigger lebih awal
+
+          if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + sectionHeight
+          ) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+
+        // Remove active class dari semua links
+        navLinks.forEach((link) => {
+          link.classList.remove("text-primary", "font-semibold");
+          link.classList.add("text-gray-600");
+        });
+
+        // Add active class ke current section link
+        if (currentSection) {
+          const activeLink = document.querySelector(
+            `.nav-link[data-section="${currentSection}"]`
+          );
+          if (activeLink) {
+            activeLink.classList.remove("text-gray-600");
+            activeLink.classList.add("text-primary", "font-semibold");
+          }
+        }
+      }
+
+      // Event listener untuk scroll
+      window.addEventListener("scroll", updateActiveNavLink);
+
+      // Event listener untuk page load
+      document.addEventListener("DOMContentLoaded", function () {
+        updateActiveNavLink();
+
+        // Smooth scroll untuk nav links
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+              // Smooth scroll ke section
+              window.scrollTo({
+                top: targetSection.offsetTop - 80, // Offset untuk navbar fixed
+                behavior: "smooth",
+              });
+            }
+          });
         });
       });
 
       // Form Submission Handler
       const contactForm = document.getElementById("contact-form");
-      contactForm.addEventListener("submit", (e) => {
-        e.preventDefault(); // Mencegah form dari pengiriman standar
-        alert(
-          "Terima kasih! Pesan Anda telah kami terima. Kami akan segera menghubungi Anda."
-        );
-        contactForm.reset(); // Mengosongkan form setelah submit
-      });
+      if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault(); // Mencegah form dari pengiriman standar
+          alert(
+            "Terima kasih! Pesan Anda telah kami terima. Kami akan segera menghubungi Anda."
+          );
+          contactForm.reset(); // Mengosongkan form setelah submit
+        });
+      }
 
       // Fade In Animation on Scroll
       const observerOptions = {
@@ -1809,29 +1839,31 @@
       const lightboxImg = document.getElementById("lightbox-img");
       const lightboxClose = document.getElementById("lightbox-close");
 
-      galleryItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          const imgSrc = item.getAttribute("src");
-          lightboxImg.setAttribute("src", imgSrc);
-          lightbox.classList.remove("hidden");
-          lightbox.classList.add("flex");
+      if (galleryItems.length > 0 && lightbox && lightboxImg && lightboxClose) {
+        galleryItems.forEach((item) => {
+          item.addEventListener("click", () => {
+            const imgSrc = item.getAttribute("src");
+            lightboxImg.setAttribute("src", imgSrc);
+            lightbox.classList.remove("hidden");
+            lightbox.classList.add("flex");
+          });
         });
-      });
 
-      // Fungsi untuk menutup lightbox
-      function closeLightbox() {
-        lightbox.classList.add("hidden");
-        lightbox.classList.remove("flex");
-      }
-
-      lightboxClose.addEventListener("click", closeLightbox);
-
-      // Menutup lightbox saat klik di area luar gambar
-      lightbox.addEventListener("click", (event) => {
-        if (event.target === lightbox) {
-          closeLightbox();
+        // Fungsi untuk menutup lightbox
+        function closeLightbox() {
+          lightbox.classList.add("hidden");
+          lightbox.classList.remove("flex");
         }
-      });
+
+        lightboxClose.addEventListener("click", closeLightbox);
+
+        // Menutup lightbox saat klik di area luar gambar
+        lightbox.addEventListener("click", (event) => {
+          if (event.target === lightbox) {
+            closeLightbox();
+          }
+        });
+      }
 
       // Header scroll effect
       window.addEventListener("scroll", function () {
